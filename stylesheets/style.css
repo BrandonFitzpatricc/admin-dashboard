@@ -26,4 +26,53 @@
             }
         }
     }
+
+    & .header {
+        padding: 0 45px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+
+        & .search-bar > input {
+            padding: 4px;
+            width: 750px;
+            background-color: hsl(255, 5%, 87%);
+            border: none;
+            border-radius: 25px;
+        }
+
+        & .bell-and-profile {
+            justify-self: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        & .greeting-text {
+            font-weight: bold;
+
+            & .user-greeting {
+                font-size: 15px;
+            }
+
+            & .user-name {
+                font-size: 20px;
+            }
+        }
+
+        & .buttons > ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+
+            & li > button {
+                padding: 8px;
+                width: 105px;
+                background-color: hsl(196, 96%, 45%);
+                border: none;
+                border-radius: 25px;
+                color: white;
+                font-weight: 500;
+            }
+        }
+    }
 }

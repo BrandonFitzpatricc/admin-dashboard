@@ -60,9 +60,9 @@
         }
 
         & .buttons > ul {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-items: center;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
 
             & li > button {
                 padding: 8px;

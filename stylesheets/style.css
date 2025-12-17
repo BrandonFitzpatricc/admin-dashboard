@@ -109,6 +109,7 @@
                     background-color: white;
                     border-radius: 10px;
                     border-left: 10px solid hsl(46, 100%, 53%);
+                    box-shadow: 3px 3px 5px hsl(0, 1%, 75%);
 
                     & .project-name {
                         font-size: 19px;
@@ -126,6 +127,7 @@
             padding: 10px 30px;
             background-color: white;
             border-radius: 10px;
+            box-shadow: 3px 3px 5px hsl(0, 1%, 75%);
 
             & .announcement {
                 padding: 15px 5px;
@@ -152,6 +154,7 @@
                 padding: 20px;
                 background-color: white;
                 border-radius: 10px;
+                box-shadow: 3px 3px 5px hsl(0, 1%, 75%);
 
                 & .trending-user + .trending-user {
                     margin-top: 20px;

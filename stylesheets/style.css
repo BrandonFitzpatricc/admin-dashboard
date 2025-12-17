@@ -19,19 +19,36 @@
         color: hsl(0, 0%, 100%);
         font-weight: bold;
         display: grid;
+        grid-template-columns: 60px 5fr;
         grid-template-rows: repeat(3, min-content);
-        gap: 40px;
+        align-items: center;
+        gap: 40px 10px;
 
-        & .logo {
-            font-size: 26px;
+        & .logo-icon {
+            width: 60px;
+            height: auto;
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(184deg) brightness(116%) contrast(101%);
         }
 
-        & .menu {
-            font-size: 20px;
+        & .logo-text {
+            font-size: 28px;
+        }
 
-            & ul > li {
-                margin-bottom: 20px;
+        & .menu li {
+            margin-bottom: 20px;
+        }            
+            
+        & .menu-icons {
+            justify-self: center;
+        
+            & img {
+                width: 30px;
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(184deg) brightness(116%) contrast(101%);
             }
+        }
+
+        & .menu-items {
+            font-size: 20px; 
         }
     }
 

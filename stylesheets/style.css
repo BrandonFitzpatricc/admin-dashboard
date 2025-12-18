@@ -1,7 +1,38 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans.woff2') format('woff2'),
+        url('../fonts/OpenSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('../fonts/OpenSans-Semibold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --blue-background-color: hsl(196, 96%, 45%);
     --grey-background-color: hsl(257, 18%, 92%);
     --box-shadow-color: hsl(0, 1%, 75%);
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -27,7 +58,7 @@
         box-shadow: 2px 0 2px var(--box-shadow-color);
         z-index: 1;
         color: hsl(0, 0%, 100%);
-        font-weight: bold;
+        font-family: "Open Sans Bold";
         display: grid;
         grid-template-columns: 60px auto;
         grid-template-rows: repeat(3, min-content);
@@ -64,7 +95,8 @@
     & .header {
         padding: 15px 45px;
         box-shadow: 0 3px 5px var(--box-shadow-color);
-        z-index: 1;
+        z-index: 1;                
+        font-family: "Open Sans Bold";
         display: grid;
         grid-template-columns: 2fr 1fr;
         align-items: center;
@@ -91,13 +123,11 @@
 
             & .user-name {
                 font-size: 18px;
-                font-weight: bold;
             }
 
         }
 
         & .greeting-message {
-            font-weight: bold;
             display: grid;
             grid-template-columns: 60px auto;
             column-gap: 20px;
@@ -133,7 +163,7 @@
                 border: none;
                 border-radius: 25px;
                 color: hsl(0, 0%, 100%);
-                font-weight: 500;
+                font-family: "Open Sans Semibold";
             }
         }
     }
@@ -147,12 +177,12 @@
         column-gap: 25px;
 
         & .heading {
-            font-weight: 500;
+            font-family: "Open Sans Semibold";
         }
 
         & .section-heading {
             margin-bottom: 8px;
-            font-size: 21px;
+            font-size: 20px;
         }
 
         & .card {
@@ -203,8 +233,12 @@
             & .announcement {
                 padding: 15px 5px;
 
+                & .announcement-title {
+                    font-size: 15px;
+                }
+
                 & .announcement-content {
-                    font-size: 14px;
+                    font-size: 13px;
                 }
             }
 
@@ -229,7 +263,7 @@
                     }
 
                     & + .trending-user {
-                        margin-top: 20px;
+                        margin-top: 25px;
                     }
                 }
             }

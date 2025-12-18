@@ -10,6 +10,10 @@
     grid-template-columns: 1fr 5fr;
     grid-template-rows: min-content;
 
+    & .icon {
+        width: 30px;
+    }
+
     & .sidebar {
         grid-row: 1 / 3;
         padding: 15px;
@@ -41,8 +45,7 @@
         & .menu-icons {
             justify-self: center;
         
-            & img {
-                width: 30px;
+            & .icon {
                 filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(184deg) brightness(116%) contrast(101%);
             }
         }
@@ -61,18 +64,30 @@
         align-items: center;
         gap: 30px;
 
-        & .search-bar > input {
-            padding: 5px;
-            width: 750px;
-            background-color: var(--grey-background-color);
-            border: none;
-            border-radius: 25px;
+        & .search-bar {
+            display: flex;
+            gap: 15px;
+
+            & > input {
+                padding: 5px;
+                width: 750px;
+                background-color: var(--grey-background-color);
+                border: none;
+                border-radius: 25px;
+            }
         }
 
         & .bell-and-profile {
-            justify-self: center;
-            font-size: 18px;
-            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+
+            & .user-name {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
         }
 
         & .greeting-text {
@@ -162,7 +177,7 @@
                 }
             }
 
-            & hr {
+            & > hr {
                border: 1px solid hsl(0, 0%, 85%);
             }
         }

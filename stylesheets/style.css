@@ -203,6 +203,11 @@ body {
                 grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
                 gap: 25px;
 
+                & > a {
+                    text-decoration: none;
+                    color: canvastext;
+                }
+
                 & .project-card {
                     height: 220px;
                     padding: 30px 25px;

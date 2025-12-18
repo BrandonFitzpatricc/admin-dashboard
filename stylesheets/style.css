@@ -98,7 +98,7 @@ body {
         z-index: 1;                
         font-family: "Open Sans Bold";
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: minmax(450px, 2fr) minmax(450px, 1fr);
         align-items: center;
         gap: 30px;
 
@@ -108,7 +108,7 @@ body {
 
             & > input {
                 padding: 5px;
-                width: 750px;
+                width: min(750px, 90%);
                 background-color: var(--grey-background-color);
                 border: none;
                 border-radius: 25px;
@@ -174,7 +174,7 @@ body {
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-template-rows: repeat(2, min-content);
-        column-gap: 25px;
+        gap: 25px;
 
         & .heading {
             font-family: "Open Sans Semibold";
@@ -200,7 +200,7 @@ body {
 
             & .project-cards {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
                 gap: 25px;
 
                 & .project-card {
@@ -248,8 +248,6 @@ body {
         }
 
         & .trending-section {
-            align-self: end;
-
             & .trending-card {
                 padding: 20px;
 

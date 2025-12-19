@@ -63,7 +63,6 @@ body {
         display: grid;
         grid-template-columns: 60px auto;
         grid-template-rows: repeat(3, min-content);
-        align-items: center;
         gap: 40px 10px;
 
         & .logo-icon {
@@ -72,6 +71,7 @@ body {
         }
 
         & .logo-text {
+            align-self: center;
             font-size: 28px;
         }
 

@@ -107,7 +107,7 @@ body {
             gap: 15px;
 
             & > input {
-                padding: 5px;
+                padding: 5px 10px;
                 width: min(750px, 90%);
                 background-color: var(--grey-background-color);
                 border: none;
